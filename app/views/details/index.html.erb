@@ -1,0 +1,9 @@
+<h2>Home Page</h2>
+
+<%@rocks.each do|rock|%>
+<a href="/rocks/<%=rock.id%>"<p><%=rock.color%></p></a>
+<p><%=rock.weight%></p>
+<%end%>
+
+<%=link_to 'Home' controller: 'details' action: 'index'%>
+

@@ -1,0 +1,14 @@
+<h2>make something better</h2>
+
+<%=form_tag "/rocks", method: :post do%>
+	<div>
+	<%=label_tag :color%>
+	<%=text_field_tag :color%>
+	</div>
+	<div>
+	<%=label_tag :weight%>
+	<%=text_field_tag :weight%>
+	</div>
+	<%=submit_tag 'Enter'%>
+
+<%end%>

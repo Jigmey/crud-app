@@ -1,0 +1,15 @@
+<h2>Edit</h2>
+
+<%=form_tag "/rocks/" + @rock.id.to_s, method: :patch do%>
+
+	<div>
+	<%=label_tag :color%>
+	<%=text_field_tag :color,@rock.color%>
+	</div>
+
+	<div>
+	<%=label_tag :weight%>
+	<%=text_field_tag :weight,@rock.weight%>
+	</div>
+	<%=submit_tag 'Enter'%>
+<%end%>
